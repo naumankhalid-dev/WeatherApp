@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#37474F">
+
+        <!-- Centered Date/Time -->
+        <TextView
+            android:id="@+id/forecast_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon, 7 Sep • 12:00"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <!-- Icon + description (left) -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/forecast_icon"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:contentDescription="weather icon"
+                    android:src="@drawable/ic_weather_default" />
+
+                <TextView
+                    android:id="@+id/forecast_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear sky"
+                    android:textSize="13sp"
+                    android:textColor="#B0BEC5"
+                    android:paddingTop="6dp" />
+            </LinearLayout>
+
+            <!-- Temp + min/max + wind (right) -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:id="@+id/forecast_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28°C"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#E53935" />
+
+                <TextView
+                    android:id="@+id/forecast_minmax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min: 22°C  Max: 30°C"
+                    android:textSize="12sp"
+                    android:textColor="#4CAF50"
+                    android:paddingTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/forecast_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind: 5 m/s"
+                    android:textSize="12sp"
+                    android:textColor="#2196F3"
+                    android:paddingTop="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

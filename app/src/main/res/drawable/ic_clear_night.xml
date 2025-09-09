@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Rotate the crescent upward -->
+    <group
+        android:rotation="90"
+        android:pivotX="12"
+        android:pivotY="12">
+
+        <!-- Crescent path from Material, rotated 90° -->
+        <path
+            android:fillColor="#A4AC8E8E"
+            android:pathData="M9.37,5.51C10.04,5.19 10.81,5 11.63,5c2.76,0 5,2.24 5,5 0,0.82 -0.19,1.59 -0.51,2.26
+            1.74,-0.57 3.01,-2.2 3.01,-4.26 0,-2.49 -2.01,-4.5 -4.5,-4.5 -2.06,0 -3.69,1.27 -4.26,3.01z"/>
+    </group>
+</vector>
